@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/style.css" />
     <title>Decodificador de Texto</title>
-</head>
-<body>
-    <img src="./style/img/log Alura.svg" alt="" srcset="">
-    
-    <textarea rows="30" cols="80" maxlength="100" readonly>Digite seu texto</textarea>
+  </head>
+  <body>
+    <header class="logo">
+      <img src="./style/img/log Alura.svg" alt="" srcset="" />
+      <div class="redes">
+        <a href="" class="linkedinImg"
+          ><img src="./style/img/icons8-linkedin-circundado.svg" alt=""
+        /></a>
+        <a href="https://github.com/k-js" class="githubImg">
+          <img src="./style/img/icons8-github-30.svg" alt=""
+        /></a>
+      </div>
+    </header>
 
-    <button type="button" class="btn">Criptografar</button>
-    <button type="button" class="btn">Descriptografar</button>
+    <main>
+      <section class="campoTextoum">
+        <textarea
+          class="input-texto"
+          rows="10"
+          cols="30"
+          maxlength="100"
+          placeholder="Digite seu texto"
+        ></textarea>
+        <div class="avisos">
+          <img
+            src="./style/img/Vector.svg"
+            alt="imagem ponto de interação"
+            srcset=""
+          />
+          <img
+            src="./style/img/aviso.svg"
+            alt="informe sobre uso de Apenas letras minúsculas e sem acento."
+            srcset=""
+          />
+        </div>
+        <div class="btn">
+          <button class="encript" onclick="btnEncriptar()">Criptografar</button>
+          <button class="desencript" onclick="btnDesecriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
 
-    <div class="aviso">
-        <img src="./style/img/Vector.svg" alt="imagem ponto de interação" srcset="">
-        <img src="./style/img/aviso.svg" alt="informe sobre uso de Apenas letras minúsculas e sem acento." srcset="">
-    </div>
+      <section class="campoTextodois">
+        <textarea
+          class="mensagem"
+          rows="10"
+          cols="30"
+          maxlength="100"
+        ></textarea>
+      </section>
+    </main>
 
-</body>
+    <footer class="footer">
+      <div class="footer-profile">
+        <p>Copyright &copy;2022 Projeto para fins didaticos</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
