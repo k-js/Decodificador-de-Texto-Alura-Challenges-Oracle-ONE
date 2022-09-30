@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin: 40px 0 20px 60px;
+  display: flex;
+}
+
+.redes {
+  margin-left: 1140px;
+}
+main {
+  display: flex;
+}
+
+.campoTextoum {
+  margin: 40px 0 20px 60px;
+  font-size: 32px;
+}
+
+textarea {
+  border-style: none;
+  font-size: 32px;
+}
+
+.mensagem {
+  font-size: 32px;
+  margin: 0 0px 0px 120px;
+  background-position: 18px;
+  background-size: 300px;
+  background-image: url("../img/High\ quality\ products\ 1\ 1.svg");
+}
+
+button {
+  font-size: 32px;
+}
+
+.footer {
+  margin-top: 7px;
+  margin-right: 40px;
+  text-align: right;
+}
+
+.profile {
+  font-size: 10px;
+}
