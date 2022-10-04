@@ -4,7 +4,7 @@
 }
 
 .logo {
-  margin: 40px 0 20px 60px;
+  margin: 12px 0 20px 60px;
   display: flex;
 }
 
@@ -33,16 +33,35 @@ textarea {
   background-image: url("../img/High\ quality\ products\ 1\ 1.svg");
 }
 
-button {
-  font-size: 32px;
+#cript{
+  height: 30px;
+  width: 150px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.button {
+  margin-left: 550px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  width: 100px;
+  font-size: larger;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #a7b0be;
+  transition: 0.3s;
 }
 
 .footer {
-  margin-top: 7px;
+  margin-top:2px;
   margin-right: 40px;
   text-align: right;
 }
 
 .profile {
-  font-size: 10px;
+  font-size: 20px;
 }
