@@ -4,7 +4,8 @@ const mensagem = document.querySelector(".mensagem");
 function btnEncriptar() {
   const textoEncriptado = encriptar(inputTexto.value);
   mensagem.value = textoEncriptado;
-  document.style.backgroundImage = "none";
+  document.getElementById("lupa").style.background = "none";
+  document.getElementById("lupa").style.border = "double";
 }
 
 function encriptar(stringEncriptada) {
@@ -31,6 +32,8 @@ function encriptar(stringEncriptada) {
 function btnDesecriptar() {
   const textoDesecriptado = desencriptar(inputTexto.value);
   mensagem.value = textoDesecriptado;
+  document.getElementById("lupa").style.background = "none";
+  document.getElementById("lupa").style.border = "double";
 }
 
 function desencriptar(stringDesencriptada) {
@@ -52,4 +55,11 @@ function desencriptar(stringDesencriptada) {
     }
   }
   return stringDesencriptada;
+}
+
+function copiarTexto() {
+  let copyText = document.getElementById("lupa");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); 
+  navigator.clipboard.writeText(copyText.value);
 }
