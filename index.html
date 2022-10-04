@@ -11,7 +11,7 @@
     <header class="logo">
       <img src="./style/img/log Alura.svg" alt="" srcset="" />
       <div class="redes">
-        <a href="" class="linkedinImg"
+        <a href="https://www.linkedin.com/in/keu-araujo/" class="linkedinImg"
           ><img src="./style/img/icons8-linkedin-circundado.svg" alt=""
         /></a>
         <a href="https://github.com/k-js" class="githubImg">
@@ -28,6 +28,7 @@
           cols="30"
           maxlength="100"
           placeholder="Digite seu texto"
+          style="resize: none"
         ></textarea>
         <div class="avisos">
           <img
@@ -42,8 +43,8 @@
           />
         </div>
         <div class="btn">
-          <button class="encript" onclick="btnEncriptar()">Criptografar</button>
-          <button class="desencript" onclick="btnDesecriptar()">
+          <button id="cript" onclick="btnEncriptar()">Criptografar</button>
+          <button id="cript" onclick="btnDesecriptar()">
             Descriptografar
           </button>
         </div>
@@ -55,7 +56,10 @@
           rows="10"
           cols="30"
           maxlength="100"
+          id="lupa"
+          style="resize: none"
         ></textarea>
+        <button class="button" onclick="copiarTexto()">Copiar</button>
       </section>
     </main>
 
